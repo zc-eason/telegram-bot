@@ -17,9 +17,9 @@ const params = {
   verbose: true,
   temperature: 1,
   openAIApiKey,
-  modelName: process.env.OPENAI_MODEL ?? "gpt-4",
+  modelName: "gpt-3.5-turbo",
   maxConcurrency: 1,
-  maxTokens: 200,
+  maxTokens: 1000,
   maxRetries: 5,
 };
 
