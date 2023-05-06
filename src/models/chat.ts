@@ -53,6 +53,6 @@ export class Model {
 
   public async call(input: string) {
     const output = await this.chain.call({ input });
-    return output.output;
+    return output.response || 'this is default answer, openai is no answer';
   }
 }
