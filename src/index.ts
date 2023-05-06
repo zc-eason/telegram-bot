@@ -13,7 +13,7 @@ const workDir = "./tmp";
 const telegramToken = process.env.TELEGRAM_TOKEN!;
 
 const bot = new Telegraf(telegramToken);
-let model = new ChatWithTools();
+let model = new ChatModel();
 
 if (!existsSync(workDir)) {
   mkdirSync(workDir);
